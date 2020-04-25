@@ -1,0 +1,9 @@
+-r requirements.txt
+
+pre-commit
+black
+flake8
+mypy
+pylint
+bandit
+pytest
