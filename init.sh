@@ -2,7 +2,7 @@
 LANG=C perl -pi -e 's/{PWD}/$ENV{PWD}/g' .vscode/settings.json
 
 # get new repo name
-REPO_NAME=${PWD##*/} 
+REPO_NAME=${PWD##*/}
 
 # create virtual environment
 python3 -m venv .venv
@@ -13,9 +13,9 @@ source .venv/bin/activate
 # update sample test to point to new repo name
 perl -pi -e "s|__REPO_NAME__|${REPO_NAME}|g" tests/test___REPO_NAME__.py
 
-# rename some place holder directories and files 
+# rename some place holder directories and files
 mv __REPO_NAME__/__REPO_NAME__.py __REPO_NAME__/${REPO_NAME}.py
-mv __REPO_NAME__ ${REPO_NAME} 
+mv __REPO_NAME__ ${REPO_NAME}
 mv tests/test___REPO_NAME__.py tests/test_${REPO_NAME}.py
 
 # update pip
@@ -41,7 +41,7 @@ cat <<++
 You can now go and create this repo, then follow the instructions for
 add to extisting repo it should look similar to this:
 
-remote add origin https://gecgithub01.walmart.com/<your user id>/<your repo name>.git
+remote add origin https://github.com/<your user id>/<your repo name>.git
 git push -u origin master
 
 ++

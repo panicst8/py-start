@@ -1,9 +1,11 @@
 -r requirements.txt
 
-pre-commit
+bandit
 black
 flake8
+hypothesis
 mypy
+pre-commit
 pylint
-bandit
 pytest
+rope

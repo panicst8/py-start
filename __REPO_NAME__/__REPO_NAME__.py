@@ -1,10 +1,11 @@
 
 class SampleClass:
     """ Sample class to test """
-    def sample_method_add(a: int, b: int):
+    def sample_method_add(self, first_int: int, second_int: int):
         """ sample method to test """
-        return a + b
+        return first_int + second_int
 
-def sample_func_subtract(a: int, b: int):
+
+def sample_func_subtract(first_int: int, second_int: int):
     """ Sample function to test """
-    return a - b
+    return first_int - second_int
