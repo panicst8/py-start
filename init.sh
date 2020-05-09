@@ -14,8 +14,7 @@ source .venv/bin/activate
 perl -pi -e "s|__REPO_NAME__|${REPO_NAME}|g" tests/test___REPO_NAME__.py
 
 # rename some place holder directories and files
-mv __REPO_NAME__/__REPO_NAME__.py __REPO_NAME__/${REPO_NAME}.py
-mv __REPO_NAME__ ${REPO_NAME}
+mv app/__REPO_NAME__.py app/${REPO_NAME}.py
 mv tests/test___REPO_NAME__.py tests/test_${REPO_NAME}.py
 
 # update pip
