@@ -1,5 +1,6 @@
 -r requirements.txt
 
+wheel
 bandit
 black
 flake8

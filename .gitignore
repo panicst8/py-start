@@ -1,6 +1,10 @@
-forty_two_days_out.all.json
-upcomming.txt
-mod_confirmed.txt
+# General
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -32,14 +36,21 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
 
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+
+# Visual Studio
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
 
 # Unit test / coverage reports
 htmlcov/
@@ -123,23 +134,3 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-
-# Pyre type checker
-.pyre/
-**/.pytype/**
-.pytype/imports/avrodecoder.imports
-.pytype/.ninja_deps
-.pytype/.ninja_log
-.pytype/build.ninja
-.pytype/imports/default.pyi
-.pytype/imports/informix.imports
-.pytype/imports/is-mods-consume.imports
-.pytype/imports/kafka.consumer.imports
-.pytype/imports/kafka.no_registry.imports
-.pytype/imports/mod_confirmed.imports
-.pytype/pyi/avrodecoder.pyi
-.pytype/pyi/informix.pyi
-.pytype/pyi/is-mods-consume.pyi
-.pytype/pyi/mod_confirmed.pyi
-.pytype/pyi/kafka/consumer.pyi
-.pytype/pyi/kafka/no_registry.pyi
